@@ -1,0 +1,23 @@
+iis:
+  hosts:
+    lanoventa:
+      ansible_host: 192.168.1.90
+    laochenta:
+      ansiblehost: 192.168.1.80
+  vars:
+    ansible_user: svasquez-ext
+    ansible_password: V4squez.24
+    ansible_connection: winrm
+    ansible_winrm_transport: ntlm
+    ansible_port: 5985
+linux:
+  hosts:
+    lab1:
+      ansible_host: 192.168.1.30
+    lab2:
+      ansible_host: 192.168.1.237
+    lab3:
+      ansible_host: 192.168.1.174
+  vars:
+    ansible_user: svasquez
+    ansible_password: ecert123

@@ -1,0 +1,6 @@
+---
+  - name: Prueba ping
+    hosts: lab1
+    tasks:
+    - name: hacer un ping
+      ansible.builtin.ping:

@@ -1,0 +1,13 @@
+---
+  - name: Prueba con WHEN
+    hosts: linux
+    tasks:
+    - name: Capturar Fecha
+      shell:
+        cmd: date
+      register: fecha
+      when: ansible_distribution=='Rocky'
+    - name: Visualizar fecha
+      ansible.builtin.debug:
+        msg: "{{fecha.stdout}}"
+      when: ansible_distribution=='Rocky'
