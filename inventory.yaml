@@ -10,6 +10,7 @@ iis:
     ansible_connection: winrm
     ansible_winrm_transport: ntlm
     ansible_port: 5985
+
 linux:
   hosts:
     lab1:
